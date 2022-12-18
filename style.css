@@ -432,7 +432,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 19rem;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .app-download__button {
@@ -655,6 +655,10 @@ a {
     .app-download__left-column {
         align-items: center;
         text-align: center;
+    }
+
+    .app-download__download-buttons {
+        justify-content: center;
     }
 
     .section {
