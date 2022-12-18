@@ -750,3 +750,16 @@ a {
     }
 
 }
+
+@media screen and (min-width: 70em) {
+    .header, .main-banner, .section, .app-download {
+        margin-left: 200rem;
+        margin-right: 200rem;
+    }
+
+    .sale-banner, .logos-carusel, .subscription, .footer {
+        padding-left: 200rem;
+        padding-right: 200rem;
+    }
+
+}
