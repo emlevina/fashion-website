@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header wrapper">
         <div class="logo">
             <img alt="logo" class="logo__img" src="assets/logo.svg">
             <h2 class="logo__text">Fashion</h2>
@@ -30,7 +30,7 @@
         </nav>
     </header>
     <main>
-        <section class="main-banner" id="main-banner">
+        <section class="main-banner wrapper" id="main-banner">
             <div class="main-banner__left-column">
                 <h1 class="main-banner__slogan">
                     Let's<br>explore<br>unique<br>clothes.
@@ -53,15 +53,17 @@
         </section>
 
         <section class="logos-carusel" id="logos-carusel">
-            <img alt="H&M logo" class="logos-carusel__logo" src="assets/logos-carusel/logo_hm.png">
-            <img alt="Obey logo" class="logos-carusel__logo" src="assets/logos-carusel/logo_obey.png">
-            <img alt="Shopify logo" class="logos-carusel__logo" src="assets/logos-carusel/logo_shopify.png">
-            <img alt="Lacoste logo" class="logos-carusel__logo" src="assets/logos-carusel/logo_lacoste.png">
-            <img alt="Levis logo" class="logos-carusel__logo" src="assets/logos-carusel/logo_levis.png">
-            <img alt="Amazon logo" class="logos-carusel__logo" src="assets/logos-carusel/logo_amazon.png">
+            <div class="wrapper logos-carusel__wrapper">
+                <img alt="H&M logo" class="logos-carusel__logo" src="assets/logos-carusel/logo_hm.png">
+                <img alt="Obey logo" class="logos-carusel__logo" src="assets/logos-carusel/logo_obey.png">
+                <img alt="Shopify logo" class="logos-carusel__logo" src="assets/logos-carusel/logo_shopify.png">
+                <img alt="Lacoste logo" class="logos-carusel__logo" src="assets/logos-carusel/logo_lacoste.png">
+                <img alt="Levis logo" class="logos-carusel__logo" src="assets/logos-carusel/logo_levis.png">
+                <img alt="Amazon logo" class="logos-carusel__logo" src="assets/logos-carusel/logo_amazon.png">
+            </div>
         </section>
 
-        <section class="section" id="new-arrivals">
+        <section class="section wrapper" id="new-arrivals">
             <div class="section__header-container">
                 <h2 class="section__header">New Arrivals</h2>
                 <img alt="" class="section__vector" src="assets/vector_decor.svg">
@@ -101,26 +103,27 @@
         </section>
 
         <section class="sale-banner" id="sale-banner">
-            <div class="sale-banner__right-column">
-                <div class="sale-banner__slogan-container">
-                    <h1 class="sale-banner__slogan">
-                        PAYDAY<br>
-                        SALE NOW
-                    </h1>
-                    <div class="colored-line colored-line--payday"></div>
+            <div class="wrapper sale-banner__wrapper">
+                <div class="sale-banner__right-column">
+                    <div class="sale-banner__slogan-container">
+                        <h1 class="sale-banner__slogan">
+                            PAYDAY<br>
+                            SALE NOW
+                        </h1>
+                        <div class="colored-line colored-line--payday"></div>
+                    </div>
+                    <p class="sale-banner__text">Spend minimal $100 get 30% off
+                        voucher code for your next purchase</p>
+                    <p class="sale-banner__text">
+                        <span class="sale-banner__text--bold">1 June - 10 June 2021</span><br>
+                        *Terms & Conditions apply
+                    </p>
+                    <a class="button sale-banner__button" href="#">Shop now</a>
                 </div>
-
-                <p class="sale-banner__text">Spend minimal $100 get 30% off
-                    voucher code for your next purchase</p>
-                <p class="sale-banner__text">
-                    <span class="sale-banner__text--bold">1 June - 10 June 2021</span><br>
-                    *Terms & Conditions apply
-                </p>
-                <a class="button sale-banner__button" href="#">Shop now</a>
             </div>
         </section>
 
-        <section class="section" id="youngs-favourite">
+        <section class="section wrapper" id="youngs-favourite">
             <div class="section__header-container">
                 <h2 class="section__header">Young's favourite</h2>
                 <img alt="" class="section__vector" src="assets/vector_decor.svg">
@@ -151,7 +154,7 @@
             </div>
         </section>
 
-        <section class="app-download" id="app-download">
+        <section class="app-download wrapper" id="app-download">
             <div class="app-download__left-column">
                 <h2 class="app-download__title">DOWNLOAD APP &
                     GET THE VOUCHER!</h2>
@@ -181,56 +184,58 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer__left-column">
-            <h2 class="footer__title">fashion</h2>
-            <p class="footer__text">Complete your style with awesome clothes from us.</p>
-            <div class="footer__social-icons">
-                <a href="#" class="footer__icon" target="_blank"><img alt="Facebook page" src="assets/footer/facebook.png"></a>
-                <a href="#" class="footer__icon" target="_blank"><img alt="Instagram page" src="assets/footer/instagram.png"></a>
-                <a href="#" class="footer__icon" target="_blank"><img alt="LinkedIn page" src="assets/footer/linkedin.png"></a>
-                <a href="#" class="footer__icon" target="_blank"><img alt="Twitter page" src="assets/footer/twitter.png"></a>
+        <div class="wrapper footer__wrapper">
+            <div class="footer__left-column">
+                <h2 class="footer__title">fashion</h2>
+                <p class="footer__text">Complete your style with awesome clothes from us.</p>
+                <div class="footer__social-icons">
+                    <a href="#" class="footer__icon" target="_blank"><img alt="Facebook page" src="assets/footer/facebook.png"></a>
+                    <a href="#" class="footer__icon" target="_blank"><img alt="Instagram page" src="assets/footer/instagram.png"></a>
+                    <a href="#" class="footer__icon" target="_blank"><img alt="LinkedIn page" src="assets/footer/linkedin.png"></a>
+                    <a href="#" class="footer__icon" target="_blank"><img alt="Twitter page" src="assets/footer/twitter.png"></a>
+                </div>
             </div>
-        </div>
-        <div class="footer__menu">
-            <ul class="footer__menu-section">
-                <h4 class="footer__menu-section-header">Company</h4>
-                <a href="#">
-                    <li class="footer__menu-item">About</li>
-                </a>
-                <a href="#">
-                    <li class="footer__menu-item">Contact us</li>
-                </a>
-                <a href="#">
-                    <li class="footer__menu-item">Support</li>
-                </a>
-                <a href="#">
-                    <li class="footer__menu-item">Careers</li>
-                </a>
-            </ul>
-            <ul class="footer__menu-section">
-                <h4 class="footer__menu-section-header">Quick Link</h4>
-                <a href="#">
-                    <li class="footer__menu-item">Share Location</li>
-                </a>
-                <a href="#">
-                    <li class="footer__menu-item">Orders Tracking</li>
-                </a>
-                <a href="#">
-                    <li class="footer__menu-item">Size Guide</li>
-                </a>
-                <a href="#">
-                    <li class="footer__menu-item">FAQs</li>
-                </a>
-            </ul>
-            <ul class="footer__menu-section">
-                <h4 class="footer__menu-section-header">Legal</h4>
-                <a href="#">
-                    <li class="footer__menu-item">Terms & Conditions</li>
-                </a>
-                <a href="#">
-                    <li class="footer__menu-item">Privacy Policy</li>
-                </a>
-            </ul>
+            <div class="footer__menu">
+                <ul class="footer__menu-section">
+                    <h4 class="footer__menu-section-header">Company</h4>
+                    <a href="#">
+                        <li class="footer__menu-item">About</li>
+                    </a>
+                    <a href="#">
+                        <li class="footer__menu-item">Contact us</li>
+                    </a>
+                    <a href="#">
+                        <li class="footer__menu-item">Support</li>
+                    </a>
+                    <a href="#">
+                        <li class="footer__menu-item">Careers</li>
+                    </a>
+                </ul>
+                <ul class="footer__menu-section">
+                    <h4 class="footer__menu-section-header">Quick Link</h4>
+                    <a href="#">
+                        <li class="footer__menu-item">Share Location</li>
+                    </a>
+                    <a href="#">
+                        <li class="footer__menu-item">Orders Tracking</li>
+                    </a>
+                    <a href="#">
+                        <li class="footer__menu-item">Size Guide</li>
+                    </a>
+                    <a href="#">
+                        <li class="footer__menu-item">FAQs</li>
+                    </a>
+                </ul>
+                <ul class="footer__menu-section">
+                    <h4 class="footer__menu-section-header">Legal</h4>
+                    <a href="#">
+                        <li class="footer__menu-item">Terms & Conditions</li>
+                    </a>
+                    <a href="#">
+                        <li class="footer__menu-item">Privacy Policy</li>
+                    </a>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
