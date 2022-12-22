@@ -10,7 +10,13 @@
     --color-black: black;
 }
 
-* {
+html {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::after, *::before {
+    margin:inherit;
     margin: 0;
     box-sizing: border-box;
 }
@@ -21,7 +27,12 @@ body {
     font-size: 24rem;
 }
 
-h1,
+h1 {
+    font-size: 55rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
 h2 {
     font-size: 48rem;
     text-transform: uppercase;
@@ -73,6 +84,12 @@ a {
 .menu {
     display: flex;
     align-items: center;
+    column-gap: 54rem;
+}
+
+.menu__links {
+    display: flex;
+    align-items: center;
     column-gap: 65rem;
 }
 
@@ -81,7 +98,7 @@ a {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 22rem;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.02em;
 }
 
 .menu__link:hover {
@@ -113,7 +130,7 @@ a {
 .main-banner {
     min-height: 852rem;
     margin-bottom: 63rem;
-    padding: 30rem 80rem 0rem 119rem;
+    padding: 0 80rem 0 119rem;
     background-color: var(--color-lightgray);
     position: relative;
     border-radius: 59rem;
@@ -124,35 +141,35 @@ a {
 }
 
 .main-banner__left-column {
+    padding-top: 77rem;
     display: flex;
-    flex-direction: column;
-    align-self: center;
+    flex-flow: row wrap;
+    align-self: flex-start;
     position: relative;
-    gap: 36rem
+    gap: 33rem;
 }
 
-.main-banner__slogan {
+.main-banner__title {
     position: relative;
+    flex-basis: 100%;
     z-index: 3;
     font-size: 90rem;
-    line-height: 125%;
+    line-height: 134%;
+    letter-spacing: 0.05em;
 }
 
 .main-banner__text {
+    flex-basis: 100%;
     font-size: 32rem;
     font-weight: 400;
     /* line-height: 48rem; */
     line-height: 150%;
     letter-spacing: -0.05em;
-}
-
-.main-banner__underslogan {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 34rem;
+    margin-bottom: 7rem;
 }
 
 .main-banner__vector {
+    margin-left: 6rem;
     width: 190rem;
 }
 
@@ -163,6 +180,7 @@ a {
     border-radius: 10rem;
     font-size: 30rem;
     letter-spacing: -0.05em;
+    margin-left: 1rem;
 }
 
 .colored-line {
@@ -175,21 +193,21 @@ a {
 
 .colored-line--unique {
     left: -25.5rem;
-    top: 224rem;
+    top: 313rem;
     width: 495rem;
     background-color: var(--color-yellow);
 }
 
 .colored-line--lets {
     left: -37rem;
-    top: -9rem;
+    top: 75rem;
     width: 464rem;
     background-color: var(--color-white);
 }
 
 .main-banner__right-image {
     align-self: flex-end;
-    margin-bottom: -3px;
+    /* margin-bottom: -3px; */
     position: relative;
 }
 
@@ -233,13 +251,12 @@ a {
 }
 
 .logos-carusel__wrapper {
-    padding-top: 50rem;
-    padding-bottom: 60rem;
+    padding-top: 70rem;
+    margin-bottom: 70rem;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-    column-gap: 121rem;
+    column-gap: 185rem;
     row-gap: 60rem;
 }
 
@@ -252,7 +269,7 @@ a {
     margin-bottom: 190rem;
     width: 100%;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: stretch;
     position: relative;
     background-image: url("assets/sale-banner/background.png");
@@ -266,26 +283,27 @@ a {
 }
 
 .sale-banner__right-column {
-    margin-right: 200rem;
-    max-width: 650rem;
+    max-width: 738rem;
+    padding-top: 139rem;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    gap: 40rem;
+    /* justify-content: center; */
+    /* gap: 40rem; */
 }
 
-.sale-banner__slogan-container {
+.sale-banner__title-container {
     position: relative;
 }
 
-.sale-banner__slogan {
+.sale-banner__title {
     position: relative;
     z-index: 2;
     font-size: 112rem;
-    font-weight: 900;
     line-height: 125%;
+    letter-spacing: 0;
+    margin-bottom: 31rem;
 }
 
 .colored-line--payday {
@@ -301,6 +319,7 @@ a {
     font-weight: 400;
     line-height: 140%;
     letter-spacing: -0.02em;
+    margin-bottom: 33rem;
 }
 
 .sale-banner__text--bold {
@@ -318,11 +337,15 @@ a {
     border-radius: 8rem;
 }
 
+#youngs-favourite.section {
+    margin-bottom: 154rem;
+}
+
 .section {
-    margin-bottom: 190rem;
+    margin-bottom: 181rem;
     display: flex;
     flex-direction: column;
-    gap: 118rem;
+    gap: 111rem;
 }
 
 .section__header-container {
@@ -344,7 +367,7 @@ a {
     position: absolute;
     z-index: 1;
     right: -7rem;
-    bottom: -5rem;
+    bottom: -9rem;
     width: 186rem;
 }
 
@@ -366,12 +389,13 @@ a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: space-between;
     row-gap: 20rem;
 }
 
 #new-arrivals .section__card {
     min-width: 400rem;
-    max-width: 500rem;
+    max-width: 486rem;
 }
 
 #youngs-favourite .section__card {
@@ -405,7 +429,7 @@ a {
 .section__card-subtitle {
     font-size: 24rem;
     font-weight: 500;
-    line-height: 50rem;
+    line-height: 36rem;
     letter-spacing: -0.04em;
     color: var(--color-gray)
 }
@@ -415,7 +439,7 @@ a {
 }
 
 .app-download {
-    margin-bottom: 200rem;
+    margin-bottom: 111rem;
     padding-left: 119rem;
     padding-right: 119rem;
     display: flex;
@@ -428,10 +452,12 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    row-gap: 65rem;
+    row-gap: 40rem;
 }
 
 .app-download__image-container {
+    position: relative;
+    top: -10rem;
     width: 50%;
     min-width: 600rem;
     max-width: 671rem;
@@ -439,6 +465,10 @@ a {
 
 .app-download__image {
     width: 100%;
+}
+
+.app-download__title {
+    letter-spacing: 0.06em;
 }
 
 .app-download__text {
@@ -449,6 +479,7 @@ a {
 }
 
 .app-download__download-buttons {
+    padding-top: 18rem;
     display: flex;
     flex-wrap: wrap;
     gap: 19rem;
@@ -462,28 +493,27 @@ a {
 }
 
 .subscription {
-    min-height: 623rem;
-    padding: 50rem 100rem;
+    min-height: 621rem;
+    padding: 140rem 100rem 0;
     width: 100%;
     background-color: var(--color-another-yellow);
     display: flex;
-    align-items: center;
 }
 
 .subscription__container {
-    margin: auto;
+    margin: 0 auto;
+    margin-bottom: 100rem;
     max-width: 1010rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 37rem;
+    row-gap: 25rem;
 }
 
 .subscription__title {
     font-size: 55rem;
-    font-weight: 900;
-    line-height: 70rem;
+    line-height: 125%;
     letter-spacing: 0.03em;
     color: var(--color-white);
 }
@@ -540,7 +570,7 @@ a {
     min-height: 545rem;
     background-color: var(--color-black);
     display: flex;
-    padding: 100rem 0;
+    padding: 120rem 0;
     color: var(--color-dark-gray);
     justify-content: space-between;
     align-items: center;
@@ -550,6 +580,7 @@ a {
     gap: 188rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .footer__left-column {
@@ -561,6 +592,8 @@ a {
 }
 
 .footer__title {
+    font-size: 39rem;
+    line-height: 1;
     color: var(--color-white)
 }
 
@@ -588,7 +621,7 @@ a {
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
-    row-gap: 32rem;
+    row-gap: 21rem;
 }
 
 .footer__menu-section-header {
@@ -627,7 +660,7 @@ a {
 }
 
 
-@media screen and (max-width: 855px) {
+@media screen and (max-width: 895px) {
     .main-banner__right-image {
         display: none;
     }
@@ -716,7 +749,7 @@ a {
         padding: 50rem;
     }
 
-    .main-banner__slogan {
+    .main-banner__title {
         font-size: 64rem;
         background-color: var(--color-white);
     }
@@ -744,7 +777,7 @@ a {
         max-height: fit-content;
     }
 
-    .sale-banner__slogan {
+    .sale-banner__title {
         font-size: 72rem;
         background-color: var(--color-white);
     }
@@ -779,7 +812,29 @@ a {
 
 
 @media (min-width: 1200px) {
-    .wrapper {
-        max-width: 1170px;
+    :root {
+        font-size: 4.5%;
     }
-}
+} 
+
+
+@media (min-width: 1400px) {
+    :root {
+        font-size: 5%;
+    }
+} 
+
+
+@media (min-width: 1600px) {
+    :root {
+        font-size: 5.5%;
+    }
+} 
+
+@media (min-width: 1920px) {
+    :root {
+        font-size: 6.25%;
+    }
+} 
+
+
